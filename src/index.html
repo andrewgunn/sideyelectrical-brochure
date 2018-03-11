@@ -42,68 +42,170 @@
     <meta name="x-stylesheet-fallback-test" content="" class="fa" />
     <script>!function (a, b, c, d) { var e, f = document, g = f.getElementsByTagName("SCRIPT"), h = g[g.length - 1].previousElementSibling, i = f.defaultView && f.defaultView.getComputedStyle ? f.defaultView.getComputedStyle(h) : h.currentStyle; if (i && i[a] !== b) for (e = 0; e < c.length; e++)f.write('<link href="' + c[e] + '" ' + d + "/>") }("font-family", "FontAwesome", ["\/lib\/font-awesome\/css\/font-awesome.min.css"], "rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-eZrrJcwDc\/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=\u0022 ");</script>
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
     <link rel="stylesheet" href="/css/bundle.min.css" />
 </head>
 
 <body>
-    <img src="/favicon-32x32.png" class="d-inline-block align-top" alt=""> Sidey Electrical
-    <ul>
-        <li>
-            <a class="nav-link" href="#about">About</a>
-        </li>
-        <li>
-            <a class="nav-link" href="#letstalk">Location</a>
-        </li>
-        <li>
-            <a class="nav-link" href="#letstalk">Let's talk</a>
-        </li>
-    </ul>
+    <nav class="navbar fixed-top navbar-expand navbar-light bg-light">
+        <a class="navbar-brand" href="#home">
+            <img src="/favicon-16x16.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <span class="ml-3">
+                Sidey Electrical
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar2" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="container">
-        <main role="main">
+        <div id="navbar2" class="navbar-collapse collapse w-100">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active ml-4">
+                    <a class="nav-link" href="#home">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#letstalk" style="white-space: nowrap;">Let's talk</a>
+                </li>
+                <!-- <li class="nav-item ml-4">
+                    <a class="nav-link" href="tel:07841354732">
+                        <i class="fa fa-phone"></i>
+                        <em>07841 354732</em>
+                    </a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="mailto:info@sideyelectrical.co.uk">
+                        <i class="fa fa-envelope"></i>
+                        <em>info@sideyelectrical.co.uk</em>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+    </header>
+
+    <div class="section">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <h2>
-                        About
+                <div class="col-lg-8 offset-lg-2">
+                    <h1 class="display-1 mb-5 text-center">Sidey Electrical</h1>
+
+                    <h2 class="display-4 mb-3">
+                        Who we are
                     </h2>
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <p class="lead">
+                                Welcome to Sidey Electrical. We Specialise in Domestic, Industrial and Commercial Electrical services including Intruder
+                                Alarm systems and CCTV. We provide a Professional and Friendly Service with customer satisfaction
+                                and quality as priority.
+                            </p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="text-center">
+                                <img src="/img/ashley-sidey-profile.jpg" class="rounded-circle img-fluid img-thumbnail">
+                            </div>
+                        </div>
+                    </div>
 
-                    <p>
-                        <img class="rounded-circle float-left mr-4" alt="" src="/img/ashley-sidey-profile.jpg" width="125px">
-                        <strong>Welcome to Sidey Electrical</strong>. I Specialise in domestic, industrial and commercial electrical
-                        services including intruder alarm systems and CCTV. I provide a professional and friendly service
-                        with customer satisfaction and quality as priority.
-                    </p>
-
-                    <h2>
-                        Location
+                    <h2 class="display-4 mb-3">
+                        Where we cover
                     </h2>
-
-                    <p>
-                        I'm primarily based in Sheffield but cover Dronfield, Chesterfield, Nottingham, and the surrounding areas. No matter where
-                        you are, I'll do my utmost to provide my services.
+                    <p class="lead">
+                        We are based in Sheffield covering Chesterfield, Nottingham, Dronfield and other surrounding areas. No matter where you are
+                        we will do our utmost to provide our services.
                     </p>
 
-                    <p>
-                        <img class="img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?center=Chesterfield+UK&zoom=9&size=600x400&maptype=roadmap&markers=color:red%7CSheffield+UK&markers=color:blue%7CDronfield+UK&markers=color:yellow%7CChesterfield+UK&markers=color:green%7CNottingham+UK&key=AIzaSyDWNYrHYbiz3fuTwTrnjdNwUj3HZYGL65g">
+                    <h2 class="display-4 mb-3">
+                        Certifications &amp; Qualifications
+                    </h2>
+                    <p class="lead mb-5">
+                        We are members of NAPIT and registered Trust Mark Contractor. We have City & Guilds, NVQ Level 3 Electrical Installation,
+                        BS7671 17th Edition Wiring Regulations. We have over 10 years of experience in the installation of
+                        a wide range of electrical services to meet all your needs including:
                     </p>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="lead fa-ul">
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Full &amp; Partial Rewires</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> New installations</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Extensions/Kitchens</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Consumer Unit Upgrades</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Sockets, Switches</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Periodic Inspection and Testing</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Interior and Exterior Lighting</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> LED Low Energy Lighting</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="lead fa-ul">
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Emergency Lighting</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Fire Alarms</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Wired &amp; Wireless Intruder Alarms</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Networking</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> PAT Testing</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> CCTV </li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Door Access</li>
+                                <li>
+                                    <i class="fa-li fa fa-check-square"></i> Home automation</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </main>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <footer>
-                    <p>
-                        Made with
-                        <span class="text-danger">♥</span>️ by
-                        <a href="https://andrewgunn.co.uk">Andrew Gunn</a>
-                    </p>
-                </footer>
             </div>
         </div>
     </div>
+
+    <div class="section">
+        <div id="instafeed-gallery-feed" class="owl-carousel owl-theme gallery">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <address class="mb-5 text-center">
+                <i class="fa fa-phone"></i>
+                <a href="tel:07841354732">07841 354732</a>
+                <br>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:info@sideyelectrical.co.uk">info@sideyelectrical.co.uk</a>
+            </address>
+            <p class="text-center">
+                <small>
+                    Made with
+                    <i class="fa fa-heart text-danger"></i> by
+                    <a href="http://andrewgunn.co.uk" target="_blank">Andrew Gunn</a>
+                </small>
+            </p>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
     </script>
@@ -113,7 +215,68 @@
         </script>
     <script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal || document.write("\u003Cscript src=\u0022\/lib\/bootstrap\/js\/bootstrap.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-5\u002B02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs=\u0022\u003E\u003C\/script\u003E"));</script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+
     <script src="/js/bundle.min.js"></script>
+
+    <script type="text/javascript">
+        var galleryFeed = new Instafeed({
+            accessToken: '7233705723.3f62e2d.ed28d7205f33409387bf8a33e1ee707c',
+            after: function () {
+                var owl = $(".owl-carousel"),
+                    owlSlideSpeed = 300;
+
+                $(document).ready(function () {
+                    owl.owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            200: {
+                                items: 2
+                            },
+                            400: {
+                                items: 3
+                            },
+                            768: {
+                                items: 5
+                            }
+                        }
+                    });
+                });
+
+                $(document.documentElement).keydown(function (event) {
+                    if (event.keyCode == 37) {
+                        owl.trigger('prev.owl.carousel', [owlSlideSpeed]);
+                    }
+                    else if (event.keyCode == 39) {
+                        owl.trigger('next.owl.carousel', [owlSlideSpeed]);
+                    }
+                });
+            },
+            get: 'user',
+            limit: 100,
+            resolution: "standard_resolution",
+            target: "instafeed-gallery-feed",
+            template:
+                '<a href="{{link}}" target="blank">' +
+                '<div class="img-featured-container">' +
+                '<div class="img-backdrop"></div>' +
+                '<div class="description-container">' +
+                '<span class="likes"><i class="icon ion-heart"></i> {{likes}}</span>' +
+                '<span class="comments"><i class="icon ion-chatbubble"></i> {{comments}}</span>' +
+                '</div>' +
+                '<img src="{{image}}" class="img-responsive">' +
+                '</div>' +
+                '</a>',
+            userId: 7233705723
+        });
+
+        galleryFeed.run();
+    </script>
 </body>
 
 </html>

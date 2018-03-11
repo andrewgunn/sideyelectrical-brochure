@@ -1,0 +1,118 @@
+// Bootstrap
+
+.navbar {
+    height: 75px;
+}
+
+.navbar-brand {
+    color: #004D7B !important;
+    font-weight: 700;
+}
+
+.nav-item {
+    border-bottom: .25rem solid transparent;
+    font-weight: 700;
+}
+
+.nav-item.active {
+    border-bottom-color: #0075AE;
+
+    .nav-link {
+        color: #004D7B !important;
+    }
+}
+
+// Site
+
+.header {
+    background-image: url(/img/header.jpg);
+    background-position: 50% 75%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section {
+    margin: 10rem 0;
+}
+
+.footer {
+    color: #fff;
+    background-color: #0075AE;
+    padding: 50px 0;
+
+    a {
+        color: #fff;
+    }
+}
+
+// Instagram
+
+.img-featured-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-featured-container img {
+    width: 100%;
+}
+
+.img-featured-container .img-backdrop {
+    background: linear-gradient(135deg, rgba(38, 163, 255, 0.85), rgba(83, 201, 179, 0.85));
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+    width: 100%;
+}
+
+.img-featured-container:hover>.img-backdrop {
+    opacity: 1;
+}
+
+.img-featured-container .description-container {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    left: 50%;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    transition: all .2s ease;
+    width: 100%;
+    z-index: 2;
+}
+
+.img-featured-container .description-container .fa-instagram {
+    font-size: 40px;
+}
+
+.img-featured-container .description-container p {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.img-featured-container:hover .description-container {
+    opacity: 1;
+}
+
+.img-featured-container .description-container .caption {
+    margin: 10px;
+}
+
+.img-featured-container .description-container .likes,
+.img-featured-container .description-container .comments {
+    margin: 0 5px;
+}
+
+@media screen and (min-width:768px) {
+    .img-featured-container .description-container .caption {
+        display: block;
+    }
+}
