@@ -2,6 +2,16 @@
 <html class="no-js no-fa" lang="en">
 
 <head prefix="og: http://ogp.me/ns">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116389136-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116389136-1');
+    </script>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,37 +52,38 @@
     <meta name="x-stylesheet-fallback-test" content="" class="fa" />
     <script>!function (a, b, c, d) { var e, f = document, g = f.getElementsByTagName("SCRIPT"), h = g[g.length - 1].previousElementSibling, i = f.defaultView && f.defaultView.getComputedStyle ? f.defaultView.getComputedStyle(h) : h.currentStyle; if (i && i[a] !== b) for (e = 0; e < c.length; e++)f.write('<link href="' + c[e] + '" ' + d + "/>") }("font-family", "FontAwesome", ["\/lib\/font-awesome\/css\/font-awesome.min.css"], "rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-eZrrJcwDc\/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=\u0022 ");</script>
 
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
     />
 
-    <link rel="stylesheet" href="/css/bundle.min.css" />
+    <link rel="stylesheet" href="/css/bundle.min.css?hash=2" />
 </head>
 
-<body>
-    <nav class="navbar fixed-top navbar-expand navbar-light bg-light">
+<body data-spy="scroll" data-target="#navbar" style="position: relative;">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#home">
-            <img src="/favicon-16x16.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/favicon-96x96.png" width="30" height="30" class="d-inline-block align-top" alt="">
             <span class="ml-3">
                 Sidey Electrical
             </span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar2" aria-expanded="false"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="navbar2" class="navbar-collapse collapse w-100">
+        <div id="navbar" class="navbar-collapse collapse w-100">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active ml-4">
-                    <a class="nav-link" href="#home">Home
-                        <span class="sr-only">(current)</span>
+                <li class="nav-item ml-4">
+                    <a class="nav-link active" href="#home">Home
                     </a>
                 </li>
                 <li class="nav-item ml-4">
                     <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#portfolio" style="white-space: nowrap;">Portfolio</a>
                 </li>
                 <li class="nav-item ml-4">
                     <a class="nav-link" href="#letstalk" style="white-space: nowrap;">Let's talk</a>
@@ -93,42 +104,57 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header class="section header" id="home">
     </header>
+
+    <div class="section anchor" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 offset-2 col-sm-12 offset-sm-0 text-center">
+                    <img src=" /img/sidey-electrical-logo.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1 class="display-1 mb-5 text-center">Sidey Electrical</h1>
-
-                    <h2 class="display-4 mb-3">
+                    <h2 class="display-4 text-center mb-3">
                         Who we are
                     </h2>
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p class="lead">
-                                Welcome to Sidey Electrical. We Specialise in Domestic, Industrial and Commercial Electrical services including Intruder
-                                Alarm systems and CCTV. We provide a Professional and Friendly Service with customer satisfaction
-                                and quality as priority.
-                            </p>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="text-center">
-                                <img src="/img/ashley-sidey-profile.jpg" class="rounded-circle img-fluid img-thumbnail">
-                            </div>
-                        </div>
-                    </div>
+                    <p class="lead">
+                        Welcome to Sidey Electrical. We Specialise in domestic, industrial and commercial electrical services including intruder
+                        alarm systems and CCTV. We provide a professional and friendly service with customer satisfaction
+                        and quality as a priority.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <h2 class="display-4 mb-3">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2 class="display-4 text-center mb-3">
                         Where we cover
                     </h2>
                     <p class="lead">
-                        We are based in Sheffield covering Chesterfield, Nottingham, Dronfield and other surrounding areas. No matter where you are
+                        We are based in Sheffield covering Dronfield, Chesterfield, Nottingham, and the surrounding areas. No matter where you are,
                         we will do our utmost to provide our services.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <h2 class="display-4 mb-3">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2 class="display-4 text-center mb-3">
                         Certifications &amp; Qualifications
                     </h2>
                     <p class="lead mb-5">
@@ -138,7 +164,7 @@
                     </p>
                     <div class="row">
                         <div class="col">
-                            <ul class="lead fa-ul">
+                            <ul class="lead fa-ul mb-0">
                                 <li>
                                     <i class="fa-li fa fa-check-square"></i> Full &amp; Partial Rewires</li>
                                 <li>
@@ -158,7 +184,7 @@
                             </ul>
                         </div>
                         <div class="col">
-                            <ul class="lead fa-ul">
+                            <ul class="lead fa-ul mb-0">
                                 <li>
                                     <i class="fa-li fa fa-check-square"></i> Emergency Lighting</li>
                                 <li>
@@ -183,21 +209,84 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section anchor" id="portfolio">
+        <h2 class="display-4 text-center mb-5">
+            <a href="https://www.instagram.com/sideyelectrical/" target="blank" style="color: #8a3ab9;">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </h2>
         <div id="instafeed-gallery-feed" class="owl-carousel owl-theme gallery">
+        </div>
+    </div>
+
+    <div class="section anchor" id="letstalk">
+        <h2 class="display-4 text-center mb-5">
+            Let's talk
+        </h2>
+        <h3 class="text-center mb-3">
+            <a href="tel:07841354732">07841 354732</a>
+        </h3>
+        <h3 class="text-center mb-3">
+            <a href="mailto:info@sideyelectrical.co.uk">info@sideyelectrical.co.uk</a>
+        </h3>
+    </div>
+
+    <div class="section anchor text-center" id="qualifications">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 mt-3 mb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="/img/ecs-logo.jpg" style="max-width: 100px;" />
+                        </div>
+                        <div class="col-6">
+                            <img src="/img/city-and-guilds-logo.png" style="max-width: 100px;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-3 mb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="/img/napit-logo.png" style="max-width: 100px;" />
+                        </div>
+                        <div class="col-6">
+                            <img src="/img/trust-mark-logo.png" style="max-width: 100px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container">
-            <address class="mb-5 text-center">
-                <i class="fa fa-phone"></i>
-                <a href="tel:07841354732">07841 354732</a>
-                <br>
-                <i class="fa fa-envelope"></i>
-                <a href="mailto:info@sideyelectrical.co.uk">info@sideyelectrical.co.uk</a>
+            <address class="mb-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-2">
+                            <i class="fa fa-phone mr-2"></i>
+                            <a href="tel:07841354732">07841 354732</a>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <a href="mailto:info@sideyelectrical.co.uk">info@sideyelectrical.co.uk</a>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa fa-facebook mr-2"></i>
+                            <a href="https://www.facebook.com/Sidey-Electrical-555640678125480/" target="blank">sidey-electrical</a>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa fa-instagram mr-2"></i>
+                            <a href="https://www.instagram.com/sideyelectrical/" target="blank">sideyelectrical</a>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa fa-twitter mr-2"></i>
+                            <a href="https://twitter.com/sideyelectrical/" target="blank">sideyelectrical</a>
+                        </div>
+                    </div>
+                </div>
             </address>
-            <p class="text-center">
+            <p>
                 <small>
                     Made with
                     <i class="fa fa-heart text-danger"></i> by
@@ -218,65 +307,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 
-    <script src="/js/bundle.min.js"></script>
-
-    <script type="text/javascript">
-        var galleryFeed = new Instafeed({
-            accessToken: '7233705723.3f62e2d.ed28d7205f33409387bf8a33e1ee707c',
-            after: function () {
-                var owl = $(".owl-carousel"),
-                    owlSlideSpeed = 300;
-
-                $(document).ready(function () {
-                    owl.owlCarousel({
-                        loop: true,
-                        margin: 10,
-                        responsive: {
-                            0: {
-                                items: 1
-                            },
-                            200: {
-                                items: 2
-                            },
-                            400: {
-                                items: 3
-                            },
-                            768: {
-                                items: 5
-                            }
-                        }
-                    });
-                });
-
-                $(document.documentElement).keydown(function (event) {
-                    if (event.keyCode == 37) {
-                        owl.trigger('prev.owl.carousel', [owlSlideSpeed]);
-                    }
-                    else if (event.keyCode == 39) {
-                        owl.trigger('next.owl.carousel', [owlSlideSpeed]);
-                    }
-                });
-            },
-            get: 'user',
-            limit: 100,
-            resolution: "standard_resolution",
-            target: "instafeed-gallery-feed",
-            template:
-                '<a href="{{link}}" target="blank">' +
-                '<div class="img-featured-container">' +
-                '<div class="img-backdrop"></div>' +
-                '<div class="description-container">' +
-                '<span class="likes"><i class="icon ion-heart"></i> {{likes}}</span>' +
-                '<span class="comments"><i class="icon ion-chatbubble"></i> {{comments}}</span>' +
-                '</div>' +
-                '<img src="{{image}}" class="img-responsive">' +
-                '</div>' +
-                '</a>',
-            userId: 7233705723
-        });
-
-        galleryFeed.run();
-    </script>
+    <script src="/js/bundle.min.js?hash=2"></script>
 </body>
 
 </html>

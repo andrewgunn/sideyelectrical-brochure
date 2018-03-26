@@ -1,28 +1,49 @@
 // Bootstrap
 
-.navbar {
-    height: 75px;
-}
-
 .navbar-brand {
     color: #004D7B !important;
     font-weight: 700;
 }
 
 .nav-item {
-    border-bottom: .25rem solid transparent;
     font-weight: 700;
 }
 
-.nav-item.active {
-    border-bottom-color: #0075AE;
+.nav-link {
+    border-bottom: .25rem solid transparent;
+    color: #004D7B !important;
+    display: inline-block;
 
-    .nav-link {
-        color: #004D7B !important;
+    &.active {
+        border-bottom-color: #0075AE;        
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #004D7B;
+}
+
+a {
+    color: #0075AE;
+
+    &:active, &:focus, &:hover, &:visited {
+        color: #004D7B;
     }
 }
 
 // Site
+
+footer {
+    background-image: url(/img/light-bulb.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.anchor {
+    margin-top: -75px;
+    padding-top: 75px; 
+}
 
 .header {
     background-image: url(/img/header.jpg);
@@ -32,7 +53,7 @@
 }
 
 .section {
-    margin: 10rem 0;
+    margin-bottom: 5rem;
 }
 
 .footer {
